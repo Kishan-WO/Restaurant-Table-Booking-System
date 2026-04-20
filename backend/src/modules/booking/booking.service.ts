@@ -72,7 +72,7 @@ export const createBookingService = async (
     requestedStartTime.toISOString(),
   );
 
-  await delay(30000);
+  // await delay(30000);
 
   if (!lockValue) {
     throw new ConflictException(
